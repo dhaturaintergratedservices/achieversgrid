@@ -1,33 +1,38 @@
 <html lang="en">
+
 <head>
     <title>Add Title</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="style_sheets/pictures/logo.png" type="image/icon type">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" rel="stylesheet" />
-    <!--    <script src="https://cdn.jsdelivr.net/npm/jquery-bez@1.0.11/src/jquery.bez.js"></script>-->
-    <!--    <script src="scripts/pace.js"></script>-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.js" integrity="sha512-+/4Q+xH9jXbMNJzNt2eMrYv/Zs2rzr4Bu2thfvzlshZBvH1g+VGP55W8b6xfku0c0KknE7qlbBPhDPrHFbgK4g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js" integrity="sha512-d8F1J2kyiRowBB/8/pAWsqUl0wSEOkG5KATkVV4slfblq9VRQ6MyDZVxWl2tWd+mPhuCbpTB4M7uU/x9FlgQ9Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js" integrity="sha512-d8F1J2kyiRowBB/8/pAWsqUl0wSEOkG5KATkVV4slfblq9VRQ6MyDZVxWl2tWd+mPhuCbpTB4M7uU/x9FlgQ9Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+ <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+ <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
 
     <link rel="stylesheet" href="style_sheets/style.css">
-
 </head>
 
 <body>
-
-<!-- <div id="left"></div>
+    <!-- <div id="left"></div>
 <div id="right"></div>
 <div id="top"></div>
 <div id="bottom"></div> -->
-
-
     <header class="header ">
         <div class="container">
             <div class="row v-center">
                 <div class="header-item item-left">
                     <div class="">
-                        <a href="<?php echo base_url()?>"><img class="logo"  src="style_sheets/pictures/logo.png" width="60%"></a>
+                        <a href="<?php echo base_url()?>"><img class="logo" src="style_sheets/pictures/logo.png" width="60%"></a>
                     </div>
                 </div>
                 <div class="header-item item-center">
@@ -46,8 +51,6 @@
                             <li>
                                 <a href="<?php echo base_url()?>profile" class=" navtxt profile">Profile</a>
                             </li>
-
-
                             <li class="menu-item-has-children">
                                 <a class=" d-none d-xl-block navtxt industries" href="<?php echo base_url()?>industries">Courses <i class="fa fa-angle-down mx-2"></i></a>
                                 <div class="sub-menu mega-menu mega-menu-column-4  d-none d-xl-block">
@@ -63,7 +66,6 @@
                                                     <li><a class="sertxt healthcare" href="<?php echo base_url()?>">Mechanical | Civil</a></li>
                                                     <li><a class="sertxt healthcare" href="<?php echo base_url()?>">Management</a></li>
                                                     <li><a class="sertxt healthcare" href="<?php echo base_url()?>">Bio Chemical Engineering</a></li>
-                                                  
                                                 </ul>
                                             </div>
                                         </div>
@@ -75,14 +77,13 @@
                                 <div class="sub-menu mega-menu mega-menu-column-4 d-xl-none">
                                     <div class="list-item">
                                         <h4 class="title c4">Courses
-</h4>
+                                        </h4>
                                         <ul class="ulhide">
-                                                    <li class="p-2"><a class="sertxt financial" href="<?php echo base_url()?>">CSE | IT</a></li>
-                                                    <li class="p-2"><a class="sertxt insurance" href="<?php echo base_url()?>">ECE | EEE</a></li>
-                                                    <li class="p-2"><a class="sertxt healthcare" href="<?php echo base_url()?>">Mechanical | Civil</a></li>
-                                                    <li class="p-2"><a class="sertxt healthcare" href="<?php echo base_url()?>">Management</a></li>
-                                                    <li class="p-2"><a class="sertxt healthcare" href="<?php echo base_url()?>">Bio Chemical Engineering</a></li>
-                                           
+                                            <li class="p-2"><a class="sertxt financial" href="<?php echo base_url()?>">CSE | IT</a></li>
+                                            <li class="p-2"><a class="sertxt insurance" href="<?php echo base_url()?>">ECE | EEE</a></li>
+                                            <li class="p-2"><a class="sertxt healthcare" href="<?php echo base_url()?>">Mechanical | Civil</a></li>
+                                            <li class="p-2"><a class="sertxt healthcare" href="<?php echo base_url()?>">Management</a></li>
+                                            <li class="p-2"><a class="sertxt healthcare" href="<?php echo base_url()?>">Bio Chemical Engineering</a></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -101,80 +102,488 @@
             </div>
         </div>
     </header>
-
-                                        <!-- --------------------------- Codes Start's From Here ----------------------------------->
-
-
+    <!-- --------------------------- Codes Start's From Here ----------------------------------->
     <section id="sec1">
-                
-    </section>   
+        <div class="container p-5 bgc2">
+            <div class="row ">
+                <div class="col-sm-5 mx-auto">
+                    <h1 class="intro">Achivers Grid Is Here, to Help & Enhance Your Career.</h1>
+                    <div class="c1 pt-3">The Passionate E-Learning Platform Created to Boost the Profession of Pupils by Offering Internships in Multiple Fields.</div>
+                    <div class="c1 pt-3">Skillful Training + Practical Exposure + Valued Certifications = Enhance Your Career</div>
+                    <a href="">
+                        <div class="p-3 mt-5 btn1 col-sm-4 text-center ">Explore Cources</div>
+                    </a>
+                </div>
+                <div class="col-sm-4 mx-auto bgc4">
+                    <!-- <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+<lottie-player src="https://assets3.lottiefiles.com/packages/lf20_ncpnijkz.json"   speed="1"  style="width: 300px; height: 300px;"  loop autoplay  ></lottie-player> -->
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="sec2">
+        <div class="container ">
+            <div class="row">
+                <div class="col-sm-6 row">
+                    <div class="col-sm-6 pt-4">
+                        <div class="box p-4">
+                            <i class="fa-solid fa-graduation-cap fs-1 pt-3 pb-3  text-center mx-auto d-block boxicon"></i>
+                            <div class="h3 text-center">Knowledge</div>
+                            <div class="p-2 text-center">The experienced industrial knowledgeable mentors will be training with conceptual clarity through virtual platforms to the students.</div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 pt-4">
+                        <div class="box p-4">
+                            <i class="fa-solid fa-graduation-cap fs-1 pt-3 pb-3  text-center mx-auto d-block boxicon"></i>
+                            <div class="h3 text-center">Knowledge</div>
+                            <div class="p-2 text-center">The experienced industrial knowledgeable mentors will be training with conceptual clarity through virtual platforms to the students.</div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 pt-4">
+                        <div class="box p-4">
+                            <i class="fa-solid fa-graduation-cap fs-1 pt-3 pb-3  text-center mx-auto d-block boxicon"></i>
+                            <div class="h3 text-center">Knowledge</div>
+                            <div class="p-2 text-center">The experienced industrial knowledgeable mentors will be training with conceptual clarity through virtual platforms to the students.</div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 pt-4">
+                        <div class="box p-4">
+                            <i class="fa-solid fa-graduation-cap fs-1 pt-3 pb-3  text-center mx-auto d-block boxicon"></i>
+                            <div class="h3 text-center">Knowledge</div>
+                            <div class="p-2 text-center">The experienced industrial knowledgeable mentors will be training with conceptual clarity through virtual platforms to the students.</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <h1 class="h1 p-5 pb-0">Why choose Achivers Grid?</h1>
+                    <div class="p-5 pb-0 pt-2">The combination of quality mentors, appropriate content, and supercilious technology creates a high-ranking learning experience for students and working professionals, to aid them in improving careers through bonafide certifications.</div>
+                    <img src="style_sheets/pictures/banner2.jpg" width="100%" class="p-5">
+                </div>
+            </div>
+            <a href="">
+                <div class="p-3 mt-5 btn2 mx-auto col-sm-4 text-center ">Explore Cources</div>
+            </a>
+        </div>
+    </section>
+    <section id="sec3">
+        <div class="container p-5">
+            <div class="row">
+                <div class="col-sm-3 p-5">
+                    <div class="h1 count"><b>100+</b></div>
+                    <div class="">Hours of hands-on learning on all Courses</div>
+                    <hr>
+                </div>
+                <div class="col-sm-3 p-5">
+                    <div class="h1 count"><b>12,800+</b></div>
+                    <div class="">Internship Pursued <br>Students</div>
+                    <hr>
+                </div>
+                <div class="col-sm-3 p-5">
+                    <div class="h1 count"><b>25+</b></div>
+                    <div class="">Domains to<br> Choose</div>
+                    <hr>
+                </div>
+                <div class="col-sm-3 p-5">
+                    <div class="h1 count"><b>81%</b></div>
+                    <div class="">We train students all over India</div>
+                    <hr>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="sec4">
+        <div class="container">
+            <div class="row p-5">
+                <div class="h1 col-sm-6 pt-5 fw-bold">Internships at Ease, Unlock <br> New Opportunities</div>
+                <div class="col-sm-6 pt-5 mt-3 text-end">Get internship certified in the domain you chose, at your <br> convenience.</div>
+                <div class="col-sm-4 pt-5">
+                    <div class="course-box">
+                        <img src="style_sheets/pictures/course.jpeg" width="100%">
+                        <div class="bg-light border-2 fw-bold col-sm-3 m-3 text-center p-2"> CSE / IT </div>
+                        <div class="h4 mx-3 ">Machine Learning with Python</div>
+                        <span class="m-3"><i class="fa-solid fa-chart-simple fs-5 c4 mx-2"></i> Beginner</span>
+                        <span class="m-3"><i class="fa-regular fa-clock fs-5 c4 mx-2"></i>20 hrs</span>
+                        <span class="m-3"><i class="fa-solid fa-star fs-5 c4 mx-2"></i>4.5</span>
+                        <div class="m-3 fw-bolder fs-3 mb-5 mx-4 ">&#8377; 7,999 <a href="#" class="fs-6 mx-5 fw-lighter">View Cources <i class="fa-solid fa-circle-arrow-right fs-5 pt-2"></i></a></div>
+                    </div>
+                </div>
+                <div class="col-sm-4 pt-5">
+                    <div class="course-box">
+                        <img src="style_sheets/pictures/course.jpeg" width="100%">
+                        <div class="bg-light border-2 fw-bold col-sm-3 m-3 text-center p-2"> CSE / IT </div>
+                        <div class="h4 mx-3 ">Machine Learning with Python</div>
+                        <span class="m-3"><i class="fa-solid fa-chart-simple fs-5 c4 mx-2"></i> Beginner</span>
+                        <span class="m-3"><i class="fa-regular fa-clock fs-5 c4 mx-2"></i>20 hrs</span>
+                        <span class="m-3"><i class="fa-solid fa-star fs-5 c4 mx-2"></i>4.5</span>
+                        <div class="m-3 fw-bolder fs-3 mb-5 mx-4 ">&#8377; 7,999 <a href="#" class="fs-6 mx-5 fw-lighter">View Cources <i class="fa-solid fa-circle-arrow-right fs-5 pt-2"></i></a></div>
+                    </div>
+                </div>
+                <div class="col-sm-4 pt-5">
+                    <div class="course-box">
+                        <img src="style_sheets/pictures/course.jpeg" width="100%">
+                        <div class="bg-light border-2 fw-bold col-sm-3 m-3 text-center p-2"> CSE / IT </div>
+                        <div class="h4 mx-3 ">Machine Learning with Python</div>
+                        <span class="m-3"><i class="fa-solid fa-chart-simple fs-5 c4 mx-2"></i> Beginner</span>
+                        <span class="m-3"><i class="fa-regular fa-clock fs-5 c4 mx-2"></i>20 hrs</span>
+                        <span class="m-3"><i class="fa-solid fa-star fs-5 c4 mx-2"></i>4.5</span>
+                        <div class="m-3 fw-bolder fs-3 mb-5 mx-4 ">&#8377; 7,999 <a href="#" class="fs-6 mx-5 fw-lighter">View Cources <i class="fa-solid fa-circle-arrow-right fs-5 pt-2"></i></a></div>
+                    </div>
+                </div>
+                <div class="col-sm-4 pt-5">
+                    <div class="course-box">
+                        <img src="style_sheets/pictures/course.jpeg" width="100%">
+                        <div class="bg-light border-2 fw-bold col-sm-3 m-3 text-center p-2"> CSE / IT </div>
+                        <div class="h4 mx-3 ">Machine Learning with Python</div>
+                        <span class="m-3"><i class="fa-solid fa-chart-simple fs-5 c4 mx-2"></i> Beginner</span>
+                        <span class="m-3"><i class="fa-regular fa-clock fs-5 c4 mx-2"></i>20 hrs</span>
+                        <span class="m-3"><i class="fa-solid fa-star fs-5 c4 mx-2"></i>4.5</span>
+                        <div class="m-3 fw-bolder fs-3 mb-5 mx-4 ">&#8377; 7,999 <a href="#" class="fs-6 mx-5 fw-lighter">View Cources <i class="fa-solid fa-circle-arrow-right fs-5 pt-2"></i></a></div>
+                    </div>
+                </div>
+                <div class="col-sm-4 pt-5">
+                    <div class="course-box">
+                        <img src="style_sheets/pictures/course.jpeg" width="100%">
+                        <div class="bg-light border-2 fw-bold col-sm-3 m-3 text-center p-2"> CSE / IT </div>
+                        <div class="h4 mx-3 ">Machine Learning with Python</div>
+                        <span class="m-3"><i class="fa-solid fa-chart-simple fs-5 c4 mx-2"></i> Beginner</span>
+                        <span class="m-3"><i class="fa-regular fa-clock fs-5 c4 mx-2"></i>20 hrs</span>
+                        <span class="m-3"><i class="fa-solid fa-star fs-5 c4 mx-2"></i>4.5</span>
+                        <div class="m-3 fw-bolder fs-3 mb-5 mx-4 ">&#8377; 7,999 <a href="#" class="fs-6 mx-5 fw-lighter">View Cources <i class="fa-solid fa-circle-arrow-right fs-5 pt-2"></i></a></div>
+                    </div>
+                </div>
+                <div class="col-sm-4 pt-5">
+                    <div class="course-box">
+                        <img src="style_sheets/pictures/course.jpeg" width="100%">
+                        <div class="bg-light border-2 fw-bold col-sm-3 m-3 text-center p-2"> CSE / IT </div>
+                        <div class="h4 mx-3 ">Machine Learning with Python</div>
+                        <span class="m-3"><i class="fa-solid fa-chart-simple fs-5 c4 mx-2"></i> Beginner</span>
+                        <span class="m-3"><i class="fa-regular fa-clock fs-5 c4 mx-2"></i>20 hrs</span>
+                        <span class="m-3"><i class="fa-solid fa-star fs-5 c4 mx-2"></i>4.5</span>
+                        <div class="m-3 fw-bolder fs-3 mb-5 mx-4 ">&#8377; 7,999 <a href="#" class="fs-6 mx-5 fw-lighter">View Cources <i class="fa-solid fa-circle-arrow-right fs-5 pt-2"></i></a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="sec5">
+        <div class="container p-5">
+
+<img src="style_sheets/pictures/external.png" class="shape d-none ">
+
+            <div class="row">
+                <div class="col-sm-6 pt-5">
+                    <div class="intro">Take the Next Step Towards Your Professional Goals</div>
+                    <div class="c1 pt-3">Be a step ahead of others to conquer dreams by getting certified for the internships Just by investing a few hours of your time in us.</div>
+                    <a href="#">
+                        <div class="p-3 mt-5 btn3 col-sm-4 text-center ">Explore Cources</div>
+                    </a>
+                    <img src="style_sheets/pictures/external.png" class="shape2 d-none ">
+                </div>
+
+                <div class="col-sm-6 row">
+
+
+                    <div class="col-sm-6 imgup">
+                        <div class="col-sm-10 mx-auto">
+                            <img src="style_sheets/pictures/ranpic1.jpg" class="picsandpos">
+                        </div>
+                        <div class="col-sm-10 mx-auto pt-3">
+                            <img src="style_sheets/pictures/ranpic1.jpg" class="picsandpos">
+                        </div>
+                    </div>
+                    <div class="col-sm-6 imgdown">
+                        <div class="col-sm-10 mx-auto">
+                            <img src="style_sheets/pictures/ranpic1.jpg" class="picsandpos">
+                        </div>
+                        <div class="col-sm-10 mx-auto pt-3">
+                            <img src="style_sheets/pictures/ranpic1.jpg" class="picsandpos">
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+
+    <section id="sec6">
+        <div class="container p-5">
+            <div class="row">
+                <div class="col-sm-5 mx-auto pt-5">
+                    <img src="style_sheets/pictures/banner3.jpg" width="100%">
+                </div>
+                <div class="col-sm-6 pt-5">
+                    <div class="fw-bolder h1 pt-4">Update Yourself With the Trending Technologies</div>
+                    <div class="pt-3">Learning made easy through the LMS portal </div>
+
+                    <div class="pt-3"><i class="fa-regular fa-circle-check c4 mx-2 fs-5"></i> Learn In-Demand Skills with Interactive Sessions</div>                 
+                       <div class="pt-3"><i class="fa-regular fa-circle-check c4 mx-2 fs-5"></i>Learn at Your Own Pace, With Access on Mobile and Desktop</div>               
+                     <div class="pt-3"><i class="fa-regular fa-circle-check c4 mx-2 fs-5"></i>Choose Courses Taught by Real-World Experts</div>
+
+                     <a href="">
+                <div class="p-3 mt-5 btn2  col-sm-4 text-center ">Explore Cources</div>
+            </a>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+<section id="sec7">
+    <div class="container p-5">
+        <h1 class="text-center fw-bolder fs1 pt-4">Choose Your Plan</h1>
+        <div class="row">
+
+            <div class="col-sm-5 mx-auto  pt-5">
+                <div class="bgc1 pricebox p-5">
+                    <div class="h6 text-center">Self Paced</div>
+                <div class="planprice text-center">&#8377; 4,999</div>
+
+                <div class="text-center"><i class="fa-solid fa-caret-right c4 fs-5 m-2"></i> Lms Access for 6 Months</div>
+                <div class="text-center"><i class="fa-solid fa-caret-right c4 fs-5 m-2"></i>  Doubt Clarification Sessions</div>
+                <div class="text-center"><i class="fa-solid fa-caret-right c4 fs-5 m-2"></i> Basic to Advanced Level Training</div>
+                <div class="text-center"><i class="fa-solid fa-caret-right c4 fs-5 m-2"></i> 1 Minor + 1 Major Project</div>
+                <div class="text-center"><i class="fa-solid fa-caret-right c4 fs-5 m-2"></i> 3 Valued Certifications</div>
+                <div class="text-center"><i class="fa-solid fa-caret-right c4 fs-5 m-2"></i> Letter of Recommendation</div>
+                <div class="text-center"><i class="fa-solid fa-caret-right c4 fs-5 m-2"></i> Pre Placement Assistance</div>
+                 <div class="p-3 mt-5 btn2  col-sm-6 text-center mx-auto">Register Now</div>
+
+                </div>
+            </div>            
+            <div class="col-sm-5 mx-auto  pt-5">
+                <div class="bgc2 pricebox c1 p-5">
+                    <div class="h6 text-center">Self Paced</div>
+                <div class="planprice text-center">&#8377; 7,999</div>
+
+                <div class="text-center"><i class="fa-solid fa-caret-right c4 fs-5 m-2"></i>  Live Interactive Sessions</div>
+                <div class="text-center"><i class="fa-solid fa-caret-right c4 fs-5 m-2"></i>  LMS access for 6 months</div>
+                <div class="text-center"><i class="fa-solid fa-caret-right c4 fs-5 m-2"></i>  Doubt Clarification Sessions</div>
+                <div class="text-center"><i class="fa-solid fa-caret-right c4 fs-5 m-2"></i>  Basic to Advanced Level Training</div>
+                <div class="text-center"><i class="fa-solid fa-caret-right c4 fs-5 m-2"></i> 1 minor project + 1 major project</div>
+                <div class="text-center"><i class="fa-solid fa-caret-right c4 fs-5 m-2"></i> 3 Valued Certifications</div>
+                <div class="text-center"><i class="fa-solid fa-caret-right c4 fs-5 m-2"></i> Letter of Recommendation</div>
+                <div class="text-center"><i class="fa-solid fa-caret-right c4 fs-5 m-2"></i> Pre Placement Assistance</div>
+                 <div class="p-3 mt-5 btn2  col-sm-6 text-center mx-auto">Register Now</div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section id="sec8">
+
+    <div id="testimonials" class="testimonials pt-5">
+
+        <div class="container ch">
+
+            <header class="section-header wow fadeInDown " data-wow-duration="1s" data-wow-delay="0s">
+                <p>What <span class="c4">the clients have to say</span></p>
+            </header>
+
+            <div class="testimonials-slider swiper wow fadeIn" data-wow-duration="1s" data-wow-delay="0.5s">
+                <div class="swiper-wrapper">
+
+                    <div class="swiper-slide">
+                        <div class="testimonial-item">
+                            <div class="stars">
+                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                            </div>
+                            <p>
+                                They really provide amazing services! Been associated for over an year now and find them the best in business. The team are all dedicated to serve.
+                            </p>
+                            <div class="profile mt-auto">
+                                <img src="style_sheets/pictures/testimonial.png" class="testimonial-img" alt="">
+                                <h3>MJ Patil</h3>
+                                <h4>CEO </h4>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="testimonial-item">
+                            <div class="stars">
+                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                            </div>
+
+                            <p>
+                                Got what I was looking for at Dhatura. Happy to be associated the team as they were careful with every detail. Looking forward to working again.
+                            </p>
+                            <div class="profile mt-auto">
+                                <img src="style_sheets/pictures/testimonial.png" class="testimonial-img" alt="">
+                                <h3>Rakesh</h3>
+                                <h4>Director </h4>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="testimonial-item">
+                            <div class="stars">
+                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                            </div>
+
+                            <p>
+                                Dhatura is wonderful! They've delivered the best application and saved my time. As a business woman, time means a lot to me and Dhatura has been on time everytime. Thanks!
+                            </p>
+                            <div class="profile mt-auto">
+                                <img src="style_sheets/pictures/testimonial.png" class="testimonial-img" alt="">
+                                <h3>Nisha Varma</h3>
+                                <h4>Manager </h4>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="testimonial-item">
+                            <div class="stars">
+                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                            </div>
+
+                            <p>
+                                Needed a development team with full cooperative and received exactly the same treatment. Thanks team Dhatura.
+                            </p>
+                            <div class="profile mt-auto">
+                                <img src="style_sheets/pictures/testimonial.png" class="testimonial-img" alt="">
+                                <h3>Lakshmi Sagar</h3>
+                                <h4>CEO </h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <div class="col-sm-12 p-5 pb-0 ">
+       <div class="tri"> 
+             <div class="form-control mx-auto">
+              <input type="text" class="n-input" placeholder="Enter e-mail adress" />
+              <button class="n-btn">Subscribe</button>
+           </div>   
+       </div>
+    </div>
+
+<footer>
+    <div class="container pt-5 c1 ">
+        <div class="row foottop">
+             <duv class="col-sm-12">
+                <!-- <img src="style_sheets/pictures/logow.png" width="100%" class="p-3 pb-0 col-sm-2 mx-4 "> -->
+            </duv>
+            <div class="col-sm-4 mx-auto">
+                <div class="c1 p-3">Your Online Career Partner Who Can Help You Travel in Your Journey of Passionate Learning.</div>
+                <div>
+                    <i class="fa-brands fa-linkedin fs-5"></i>
+                    <i class="fa-brands fa-instagram fs-5"></i>
+                </div>
+                <div class="p-3">Privacy Policy | Terms | Refund Policy</div>
+            </div>
+
+            <div class="col-sm-2 mx-auto">
+                <div class="fs-5 pt-3 ">Links</div>
+                <div class="pt-2"><i class="fa-solid fa-caret-right c4 fs-5 mx-2"></i>Home</div>
+                <div class="pt-2"><i class="fa-solid fa-caret-right c4 fs-5 mx-2"></i>Profile</div>
+                <div class="pt-2"><i class="fa-solid fa-caret-right c4 fs-5 mx-2"></i>Contact</div>
+            </div>
+
+            <div class="col-sm-4 mx-auto">
+                <div class="fs-5 pt-3 ">Address</div>
+                <div class="pt-2"><i class="fa-solid fa-phone c4 fs-5 mx-2"></i>415-716-1166</div>
+                <div class="pt-2"><i class="fa-solid fa-envelope c4 fs-5 mx-2"></i>mail@lms.rocket-soft.org</div>
+                <div class="pt-2"><i class="fa-solid fa-marker c4 fs-5 mx-2"></i>4193 Roosevelt StreetSan Francisco, CA 94103</div>
+</div>
+
+        </div>
+
+<hr class="m-5">
+
+<div class="text-center pt-3">Achievers Grid © All rights reserved Copyrights 2022</div>
+
+    </div>
+</footer>
 
 
 
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-                                <!----------------------------- Codes End's Here ----------------------------------->
-    
-    
-    
-<!--       <div class="btn p-3 upbtn">
+
+
+
+
+
+
+
+
+    <!----------------------------- Codes End's Here ----------------------------------->
+    <!--       <div class="btn p-3 upbtn">
                 <i class="fa fa-caret-up" aria-hidden="true"></i>
             </div> -->
-        <script>
-        $(document).ready(function() {
-            $('.upbtn').click(function() {
-                $('html,body').animate({
-                    scrollTop: $('#sec1').offset().top
-                }, 200);
-            });
-            
-             $(window).scroll(function() {
-                var upbtn = $(window).scrollTop();
-                if (upbtn > 0) {
-                    $(".upbtn").css("opacity", "1");
-                    $(".upbtn").css("transition", ".5s");
-                } else {
-                    $(".upbtn").css("opacity", "0");
-                    $(".upbtn").css("transition", ".5s");
-                }
-            });
-            
-            
-            
-        });
 
+
+<script>
+        /**
+         * Testimonials slider
+         */
+        new Swiper('.testimonials-slider', {
+            speed: 600,
+            loop: true,
+            autoplay: {
+                delay: 5000,
+                disableOnInteraction: false
+            },
+            slidesPerView: 'auto',
+            pagination: {
+                el: '.swiper-pagination',
+                type: 'bullets',
+                clickable: true
+            },
+            breakpoints: {
+                320: {
+                    slidesPerView: 1,
+                    spaceBetween: 40
+                },
+
+                1200: {
+                    slidesPerView: 3,
+                }
+            }
+        });
+    </script>
+
+    <script type="text/javascript">
+    $(document).ready(function($) {
+        $('.count').counterUp({
+            delay: 10,
+            time: 1000
+        });
+    });
     </script>
     <script>
-        new WOW().init();
-    </script>
+    $(document).ready(function() {
+        $('.upbtn').click(function() {
+            $('html,body').animate({
+                scrollTop: $('#sec1').offset().top
+            }, 200);
+        });
 
+        $(window).scroll(function() {
+            var upbtn = $(window).scrollTop();
+            if (upbtn > 0) {
+                $(".upbtn").css("opacity", "1");
+                $(".upbtn").css("transition", ".5s");
+            } else {
+                $(".upbtn").css("opacity", "0");
+                $(".upbtn").css("transition", ".5s");
+            }
+        });
+
+
+
+    });
+    </script>
+    <script>
+    new WOW().init();
+    </script>
     <script type="text/javascript" src="scripts/main.js"></script>
-</body></html>
+</body>
+
+</html>
